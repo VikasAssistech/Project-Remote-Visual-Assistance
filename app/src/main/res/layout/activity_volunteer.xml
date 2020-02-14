@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_dark_grey"
+    tools:context=".VolunteerActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/ps_volunteer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="131dp"
+        android:text="Profile Settings"
+        android:textColor="@color/my_bright_green"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.012"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logs_volunteer" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="176dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="177dp"
+        android:text="Volunteer Home"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="131dp"
+        android:text="Communication Services:"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider" />
+
+    <TextView
+        android:id="@+id/caller_name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Caller Name: "
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/caller_number2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="12dp"
+        android:text="Caller Number: "
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caller_name2" />
+
+    <Button
+        android:id="@+id/button_accept"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="25dp"
+        android:background="@color/my_bright_green"
+        android:clickable="false"
+        android:gravity="center"
+        android:text="Accept"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toStartOf="@+id/button_Reject"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/caller_number2" />
+
+    <Button
+        android:id="@+id/button_Reject"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="75dp"
+        android:background="@color/my_bright_red"
+        android:clickable="false"
+        android:gravity="center"
+        android:text="Reject"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/button_accept"
+        app:layout_constraintTop_toBottomOf="@+id/caller_number2" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_accept" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="131dp"
+        android:text="NSS Volunteering:"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <TextView
+        android:id="@+id/nss_hours"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:gravity="center"
+        android:text="hours"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/nss_status"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/nss_status"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Unregistered"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <EditText
+        android:id="@+id/entry_no"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:gravity="center_vertical"
+        android:hint="Entry Number"
+        android:inputType="text"
+        android:paddingStart="15dp"
+        android:textColor="@android:color/black"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/button_register_nss"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <Button
+        android:id="@+id/button_register_nss"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@android:color/holo_green_light"
+        android:text="REGISTER"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/entry_no" />
+
+    <TextView
+        android:id="@+id/logs_volunteer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="131dp"
+        android:text="Check Event Logs"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="24sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.012"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+    <Button
+        android:id="@+id/button_v_signout"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/holo_red_dark"
+        android:text="SIGN OUT"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider4" />
+
+    <TextView
+        android:id="@+id/text_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/my_bright_green"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/caller_name2"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/text_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@color/my_bright_green"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/caller_number2"
+        app:layout_constraintTop_toBottomOf="@+id/text_name" />
+
+    <ImageButton
+        android:id="@+id/imageButton_refresh_in"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider"
+        app:srcCompat="@drawable/ic_refresh" />
+
+    <View
+        android:id="@+id/divider4"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ps_volunteer" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

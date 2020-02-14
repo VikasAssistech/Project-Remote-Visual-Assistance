@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_dark_grey"
+    tools:context=".VolunteerVideoActivity">
+
+    <TextView
+        android:id="@+id/text_caller_name2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Caller Name: "
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_caller_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_caller_name2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text_caller_number2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Caller Number: "
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_caller_name2" />
+
+    <TextView
+        android:id="@+id/text_caller_number"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_caller_number2"
+        app:layout_constraintTop_toBottomOf="@+id/text_caller_name2" />
+
+    <View
+        android:id="@+id/divider9"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_caller_number2" />
+
+    <!--<RelativeLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_marginStart="15dp"-->
+        <!--android:layout_marginTop="100dp"-->
+        <!--android:layout_marginEnd="15dp"-->
+        <!--android:layout_marginBottom="15dp"-->
+        <!--app:layout_constraintBottom_toTopOf="@+id/imageButton_play"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toTopOf="parent">-->
+
+        <!--<VideoView-->
+            <!--android:id="@+id/videoView"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent" />-->
+
+    <!--</RelativeLayout>-->
+
+    <!--<VideoView-->
+        <!--android:id="@+id/videoView"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="0dp"-->
+        <!--android:layout_marginStart="15dp"-->
+        <!--android:layout_marginTop="15dp"-->
+        <!--android:layout_marginEnd="15dp"-->
+        <!--android:layout_marginBottom="145dp"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintTop_toBottomOf="@+id/divider9" />-->
+
+    <ImageButton
+        android:id="@+id/imageButton_end"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/my_light_blue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_call_end_black_24dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton_play"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="80dp"
+        android:background="@color/my_button_grey"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_play" />
+
+    <ImageButton
+        android:id="@+id/imageButton_call"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/my_button_grey"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton_end"
+        app:layout_constraintEnd_toStartOf="@+id/imageButton_gps"
+        app:layout_constraintStart_toEndOf="@+id/imageButton_play"
+        app:srcCompat="@drawable/ic_call" />
+
+    <ImageButton
+        android:id="@+id/imageButton_gps"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="15dp"
+        android:background="@color/my_button_grey"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton_end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/ic_location" />
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/mapView"
+        android:layout_width="0dp"
+        android:layout_height="485dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@color/my_yellow_pending"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider9" />
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_width="0dp"
+        android:layout_height="480dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider9" />
+
+</android.support.constraint.ConstraintLayout>

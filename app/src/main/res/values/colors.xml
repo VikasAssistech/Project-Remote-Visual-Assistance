@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="my_dark_blue">#020087</color>
+    <color name="my_dark_grey">#161621</color>
+    <color name="my_bright_green">#ff99cc00</color>
+    <color name="my_yellow_pending">#BCA40D</color>
+    <color name="my_light_blue">#74B5CD</color>
+    <color name="my_button_grey">#878383</color>
+    <color name="my_off_white">#DBDDDF</color>
+    <color name="my_bright_red">#FF0000</color>
+</resources>

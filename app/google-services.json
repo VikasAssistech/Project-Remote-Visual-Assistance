@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "902840517879",
+    "firebase_url": "https://remote-visual-assistant.firebaseio.com",
+    "project_id": "remote-visual-assistant",
+    "storage_bucket": "remote-visual-assistant.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:902840517879:android:a4b4af09289a25bb",
+        "android_client_info": {
+          "package_name": "com.example.remotevisualassistant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "902840517879-daip3f2l2sbo0q0cvvnv9cjrpri1nu3i.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.remotevisualassistant",
+            "certificate_hash": "765bf96e549b0edcbbf5febdadb55beb4dd346e9"
+          }
+        },
+        {
+          "client_id": "902840517879-j6rs82bk3c8vuligabggkulqe5hnrfgi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnADVf8ZbYY_LpJ18z5xxQM3SqfpuB3Gw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "902840517879-j6rs82bk3c8vuligabggkulqe5hnrfgi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

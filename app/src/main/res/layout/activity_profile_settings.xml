@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_dark_grey"
+    tools:context=".ProfileSettingsActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/tvdcsd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="130dp"
+        android:gravity="center"
+        android:text="Profile Settings"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/divider5"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="15dp"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvdcsd" />
+
+    <View
+        android:id="@+id/divider13"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Email ID:"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/t1_email"
+        android:layout_width="225dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="Email ID:"
+        android:textColor="@color/my_bright_green"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+    <TextView
+        android:id="@+id/t2_role"
+        android:layout_width="225dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="User type"
+        android:textColor="@color/my_bright_green"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t1_email" />
+
+    <TextView
+        android:id="@+id/t3_number"
+        android:layout_width="225dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="Phone number"
+        android:textColor="@color/my_bright_green"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t2_role" />
+
+    <TextView
+        android:id="@+id/t4_name"
+        android:layout_width="225dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="Name"
+        android:textColor="@color/my_bright_green"
+        android:textSize="18sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/t3_number" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="User Details"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider5" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Role:"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Number:"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:text="Name: "
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+    <TextView
+        android:id="@+id/textView16"
+        android:layout_width="wrap_content"
+        android:layout_height="35dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="15dp"
+        android:gravity="center"
+        android:text="Change Password"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider13" />
+
+    <EditText
+        android:id="@+id/old_p"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="75dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Old Password"
+        android:inputType="textPassword"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:singleLine="true"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+    <EditText
+        android:id="@+id/new_p1"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="75dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="New Password"
+        android:inputType="textPassword"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:singleLine="true"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/old_p" />
+
+    <EditText
+        android:id="@+id/new_p2"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="75dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Renter Password"
+        android:inputType="textPassword"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:singleLine="true"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_p1" />
+
+    <Button
+        android:id="@+id/button_upd_p"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="161dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="162dp"
+        android:background="@color/my_bright_green"
+        android:text="Update password"
+        android:textColor="@android:color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/new_p2" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.v4.widget.NestedScrollView>

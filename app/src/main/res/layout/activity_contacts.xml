@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/my_dark_grey"
+    tools:context=".ContactsActivity">
+
+    <TextView
+        android:id="@+id/e1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="130dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="130dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:text="Contacts Manager"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/dividerr5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/dividerr5"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textView10dc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/e1" />
+
+    <TextView
+        android:id="@+id/textView10dc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="20dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="Search for a volunteer:"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView12ddc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dividerr5" />
+
+    <TextView
+        android:id="@+id/textView14dfc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:text="My frequent volunteers:"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/lv_contacts"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dividerre" />
+
+    <TextView
+        android:id="@+id/textView12ddc"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="2dp"
+        android:background="@android:color/white"
+        android:gravity="center"
+        android:text="+91"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/innum"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView10dc" />
+
+    <EditText
+        android:id="@+id/innum"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="20dp"
+        android:background="@android:color/white"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:singleLine="true"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/textView12ddc"
+        app:layout_constraintTop_toBottomOf="@+id/textView10dc" />
+
+    <Button
+        android:id="@+id/button_search_contacts"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="5dp"
+        android:background="@android:color/holo_green_light"
+        android:text="Search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/innum"
+        app:layout_constraintTop_toTopOf="@+id/innum" />
+
+    <View
+        android:id="@+id/dividerre"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textView14dfc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView12ddc" />
+
+    <ListView
+        android:id="@+id/lv_contacts"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@android:color/white"
+        android:scrollIndicators="right"
+        android:scrollbarAlwaysDrawVerticalTrack="false"
+        android:scrollbars="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14dfc" />
+
+</android.support.constraint.ConstraintLayout>
